@@ -1,5 +1,0 @@
-[General]
-Name=Sony PSP GUI Plugin (PRX) C++
-Comment=Project template for the Sony PSP
-ShowFilesAfterGeneration=src/PLUGIN__%{APPNAMELC}.cpp
-Category=KDE/Standard/Terminal
