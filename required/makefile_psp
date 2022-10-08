@@ -1,0 +1,16 @@
+TARGET = %{APPNAMEID}
+OBJS = ../src/imports.o \
+	 ../src/lib_PRX.o \
+	 ../src/lib_Tools.o \
+	 ../src/lib_MiniC.o \
+	 ../src/lib_UI.o \
+	 ../src/prx_main.o
+
+BUILD_PRX = 1
+PRX_EXPORTS=../exports.exp
+LDFLAGS = -nostartfiles
+LIBS = -lpspctrl_driver -lpspdisplay_driver -lpsppower_driver
+INCDIR = include
+
+PSPSDK = /usr/psp/sdk
+include /usr/psp/sdk/lib/build.mak
